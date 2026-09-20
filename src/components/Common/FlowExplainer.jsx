@@ -31,11 +31,8 @@ import { AiFillStar } from "react-icons/ai"
 import signupImg from "../../assets/Images/signup.webp"
 import loginImg from "../../assets/Images/login.webp"
 import bannerHero from "../../assets/Images/aboutus1.webp"
-import bannerCommunity from "../../assets/Images/aboutus2.webp"
 import bannerLearn from "../../assets/Images/aboutus3.webp"
-import instructorImg from "../../assets/Images/Instructor.png"
 import progressImg from "../../assets/Images/Know_your_progress.png"
-import planImg from "../../assets/Images/Plan_your_lessons.png"
 import compareImg from "../../assets/Images/Compare_with_others.png"
 
 /* ------------------------- Reusable UI atoms ---------------------------- */
@@ -769,6 +766,21 @@ function MockInput({ label, value }) {
 /* ---------------------------- Flow content ------------------------------ */
 
 const STUDENT = [
+  {
+    tag: "Landing",
+    tone: "yellow",
+    icon: <HiOutlineSparkles />,
+    title: "Land on the Homepage",
+    caption:
+      "You arrive at StudyNotion — a bold hero, aurora blobs, animated stats and a live product video. One tap on Sign up starts your journey.",
+    bullets: [
+      "GSAP-powered kinetic hero",
+      "Trust stats + product demo video",
+      "Quick CTA to onboarding",
+    ],
+    Screen: ScreenHome,
+    label: "studynotion.com",
+  },
   {
     tag: "Auth",
     tone: "yellow",
